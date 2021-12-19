@@ -9,6 +9,17 @@ public class Test {
     }
 
     private static void TestKruskal() {
+
+        int[][] data1 = new int[][]{
+                {4, 1, 2},
+                {10, 1, 4},
+                {7, 1, 6},
+                {2, 2, 3},
+                {5, 4, 5},
+                {8, 6, 5},
+                {10, 3, 5}
+        };
+
         int[][] data2 = new int[][]{
                 {5, 1, 2},
                 {9, 2, 10},
@@ -24,7 +35,7 @@ public class Test {
         };
 
 
-        Kruskal kruskal = new Kruskal(data2);
+        Kruskal kruskal = new Kruskal(null);
         kruskal.kruskalMST();
         for (Edge edge : kruskal.getResult()) {
             System.out.println(edge.weight);
