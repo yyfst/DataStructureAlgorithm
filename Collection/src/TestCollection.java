@@ -27,5 +27,11 @@ public class TestCollection {
         System.out.println("------------");
         baseMethod.printCollection(collection);
 
+        ListDemo listDemo = new ListDemo();
+        listDemo.linkedListDemo();
+
+        CollectionsDemo collectionsDemo = new CollectionsDemo();
+        collectionsDemo.collections();
+
     }
 }
