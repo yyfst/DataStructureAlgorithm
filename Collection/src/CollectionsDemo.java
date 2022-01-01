@@ -16,6 +16,6 @@ public class CollectionsDemo {
             }
         });
         System.out.println(list);
-        COll
+
     }
 }
