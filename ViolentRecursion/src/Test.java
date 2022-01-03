@@ -1,7 +1,24 @@
+import java.util.Stack;
+
 public class Test {
     public static void main(String[] args) {
-        testHanoi();
+        testStackReverse();
 
+    }
+
+    private static void testStackReverse() {
+        StackReverse stackReverse = new StackReverse();
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+
+        stackReverse.stackReverse(stack);
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop());
+        }
     }
 
     private static void testHanoi() {
