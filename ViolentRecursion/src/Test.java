@@ -1,9 +1,21 @@
+import java.util.List;
 import java.util.Stack;
 
 public class Test {
     public static void main(String[] args) {
-        testStackReverse();
+//        testStackReverse();
 
+        testSubString();
+    }
+
+    private static void testSubString() {
+        String str = "abc";
+        SubString subString = new SubString();
+        List<String> res = subString.findSubString1(str);
+        for (String s : res) {
+            System.out.println(s);
+        }
+        System.out.println("str size: " + str.length() + "  res size: " + res.size());
     }
 
     private static void testStackReverse() {
